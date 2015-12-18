@@ -1,0 +1,904 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3809856B1C1C886400EDC74D /* PatientListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3809856A1C1C886400EDC74D /* PatientListViewController.m */; };
+		3809856E1C1C899E00EDC74D /* PatientListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3809856D1C1C899E00EDC74D /* PatientListTableViewCell.m */; };
+		380985771C1C8FD100EDC74D /* ServerRequestManager+Patient.m in Sources */ = {isa = PBXBuildFile; fileRef = 380985761C1C8FD100EDC74D /* ServerRequestManager+Patient.m */; };
+		3809857A1C1C901100EDC74D /* Patient.m in Sources */ = {isa = PBXBuildFile; fileRef = 380985791C1C901100EDC74D /* Patient.m */; };
+		380985801C1CAB0D00EDC74D /* BSDateFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3809857F1C1CAB0D00EDC74D /* BSDateFormatter.m */; };
+		380985831C1CB35000EDC74D /* AutolayoutView.m in Sources */ = {isa = PBXBuildFile; fileRef = 380985821C1CB35000EDC74D /* AutolayoutView.m */; };
+		384C69BB1C1F1E930076566D /* PatientDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 384C69BA1C1F1E930076566D /* PatientDetailViewController.m */; };
+		38533ED21C2309D200892BAD /* PatientInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 38533ED11C2309D200892BAD /* PatientInfo.m */; };
+		385BE6F31C19F6CB00CBC102 /* AvenirLTStd-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 385BE6DA1C19F6CB00CBC102 /* AvenirLTStd-Black.otf */; };
+		385BE6F41C19F6CB00CBC102 /* AvenirLTStd-BlackOblique.otf in Resources */ = {isa = PBXBuildFile; fileRef = 385BE6DB1C19F6CB00CBC102 /* AvenirLTStd-BlackOblique.otf */; };
+		385BE6F51C19F6CB00CBC102 /* AvenirLTStd-Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = 385BE6DC1C19F6CB00CBC102 /* AvenirLTStd-Book.otf */; };
+		385BE6F61C19F6CB00CBC102 /* AvenirLTStd-BookOblique.otf in Resources */ = {isa = PBXBuildFile; fileRef = 385BE6DD1C19F6CB00CBC102 /* AvenirLTStd-BookOblique.otf */; };
+		385BE6F71C19F6CB00CBC102 /* AvenirLTStd-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = 385BE6DE1C19F6CB00CBC102 /* AvenirLTStd-Heavy.otf */; };
+		385BE6F81C19F6CB00CBC102 /* AvenirLTStd-HeavyOblique.otf in Resources */ = {isa = PBXBuildFile; fileRef = 385BE6DF1C19F6CB00CBC102 /* AvenirLTStd-HeavyOblique.otf */; };
+		385BE6F91C19F6CB00CBC102 /* AvenirLTStd-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 385BE6E01C19F6CB00CBC102 /* AvenirLTStd-Light.otf */; };
+		385BE6FA1C19F6CB00CBC102 /* AvenirLTStd-LightOblique.otf in Resources */ = {isa = PBXBuildFile; fileRef = 385BE6E11C19F6CB00CBC102 /* AvenirLTStd-LightOblique.otf */; };
+		385BE6FB1C19F6CB00CBC102 /* AvenirNextLTPro-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 385BE6E21C19F6CB00CBC102 /* AvenirNextLTPro-Bold.otf */; };
+		385BE6FC1C19F6CB00CBC102 /* AvenirNextLTPro-BoldCn.otf in Resources */ = {isa = PBXBuildFile; fileRef = 385BE6E31C19F6CB00CBC102 /* AvenirNextLTPro-BoldCn.otf */; };
+		385BE6FD1C19F6CB00CBC102 /* AvenirNextLTPro-BoldCnIt.otf in Resources */ = {isa = PBXBuildFile; fileRef = 385BE6E41C19F6CB00CBC102 /* AvenirNextLTPro-BoldCnIt.otf */; };
+		385BE6FE1C19F6CB00CBC102 /* AvenirNextLTPro-Cn.otf in Resources */ = {isa = PBXBuildFile; fileRef = 385BE6E51C19F6CB00CBC102 /* AvenirNextLTPro-Cn.otf */; };
+		385BE6FF1C19F6CB00CBC102 /* AvenirNextLTPro-CnIt.otf in Resources */ = {isa = PBXBuildFile; fileRef = 385BE6E61C19F6CB00CBC102 /* AvenirNextLTPro-CnIt.otf */; };
+		385BE7001C19F6CB00CBC102 /* AvenirNextLTPro-Demi.otf in Resources */ = {isa = PBXBuildFile; fileRef = 385BE6E71C19F6CB00CBC102 /* AvenirNextLTPro-Demi.otf */; };
+		385BE7011C19F6CB00CBC102 /* AvenirNextLTPro-DemiCn.otf in Resources */ = {isa = PBXBuildFile; fileRef = 385BE6E81C19F6CB00CBC102 /* AvenirNextLTPro-DemiCn.otf */; };
+		385BE7021C19F6CB00CBC102 /* AvenirNextLTPro-DemiCnIt.otf in Resources */ = {isa = PBXBuildFile; fileRef = 385BE6E91C19F6CB00CBC102 /* AvenirNextLTPro-DemiCnIt.otf */; };
+		385BE7031C19F6CB00CBC102 /* AvenirNextLTPro-DemiIt.otf in Resources */ = {isa = PBXBuildFile; fileRef = 385BE6EA1C19F6CB00CBC102 /* AvenirNextLTPro-DemiIt.otf */; };
+		385BE7041C19F6CB00CBC102 /* AvenirNextLTPro-HeavyCn.otf in Resources */ = {isa = PBXBuildFile; fileRef = 385BE6EB1C19F6CB00CBC102 /* AvenirNextLTPro-HeavyCn.otf */; };
+		385BE7051C19F6CB00CBC102 /* AvenirNextLTPro-HeavyCnIt.otf in Resources */ = {isa = PBXBuildFile; fileRef = 385BE6EC1C19F6CB00CBC102 /* AvenirNextLTPro-HeavyCnIt.otf */; };
+		385BE7061C19F6CB00CBC102 /* AvenirNextLTPro-It.otf in Resources */ = {isa = PBXBuildFile; fileRef = 385BE6ED1C19F6CB00CBC102 /* AvenirNextLTPro-It.otf */; };
+		385BE7071C19F6CB00CBC102 /* AvenirNextLTPro-MediumCn.otf in Resources */ = {isa = PBXBuildFile; fileRef = 385BE6EE1C19F6CB00CBC102 /* AvenirNextLTPro-MediumCn.otf */; };
+		385BE7081C19F6CB00CBC102 /* AvenirNextLTPro-MediumCnIt.otf in Resources */ = {isa = PBXBuildFile; fileRef = 385BE6EF1C19F6CB00CBC102 /* AvenirNextLTPro-MediumCnIt.otf */; };
+		385BE7091C19F6CB00CBC102 /* AvenirNextLTPro-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 385BE6F01C19F6CB00CBC102 /* AvenirNextLTPro-Regular.otf */; };
+		385BE70A1C19F6CB00CBC102 /* AvenirNextLTPro-UltLtCn.otf in Resources */ = {isa = PBXBuildFile; fileRef = 385BE6F11C19F6CB00CBC102 /* AvenirNextLTPro-UltLtCn.otf */; };
+		385BE70B1C19F6CB00CBC102 /* AvenirNextLTPro-UltLtCnIt.otf in Resources */ = {isa = PBXBuildFile; fileRef = 385BE6F21C19F6CB00CBC102 /* AvenirNextLTPro-UltLtCnIt.otf */; };
+		385BE70D1C19F84E00CBC102 /* FontFile.strings in Resources */ = {isa = PBXBuildFile; fileRef = 385BE70C1C19F84E00CBC102 /* FontFile.strings */; };
+		385BE7111C19FB9F00CBC102 /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 385BE7101C19FB9F00CBC102 /* BaseModel.m */; };
+		385BE7141C19FBAA00CBC102 /* LoggedUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 385BE7131C19FBAA00CBC102 /* LoggedUser.m */; };
+		385BE7171C19FCAE00CBC102 /* Clinic.m in Sources */ = {isa = PBXBuildFile; fileRef = 385BE7161C19FCAE00CBC102 /* Clinic.m */; };
+		385BE71B1C19FD7900CBC102 /* UserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = 385BE71A1C19FD7900CBC102 /* UserDefaults.m */; };
+		385BE7211C19FFC600CBC102 /* UIViewController+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 385BE7201C19FFC600CBC102 /* UIViewController+Additions.m */; };
+		385BE7251C1A039500CBC102 /* ClinicsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 385BE7241C1A039500CBC102 /* ClinicsTableViewCell.m */; };
+		385BE7281C1A076200CBC102 /* AutolayoutTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 385BE7271C1A076200CBC102 /* AutolayoutTextField.m */; };
+		388F6D211C19C8F40054C183 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 388F6D201C19C8F40054C183 /* main.m */; };
+		388F6D241C19C8F40054C183 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 388F6D231C19C8F40054C183 /* AppDelegate.m */; };
+		388F6D271C19C8F40054C183 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 388F6D261C19C8F40054C183 /* ViewController.m */; };
+		388F6D2A1C19C8F40054C183 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 388F6D281C19C8F40054C183 /* Main.storyboard */; };
+		388F6D2C1C19C8F40054C183 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 388F6D2B1C19C8F40054C183 /* Images.xcassets */; };
+		388F6D2F1C19C8F40054C183 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 388F6D2D1C19C8F40054C183 /* LaunchScreen.xib */; };
+		388F6D3B1C19C8F40054C183 /* BioStationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 388F6D3A1C19C8F40054C183 /* BioStationTests.m */; };
+		388F6D461C19CDEF0054C183 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 388F6D451C19CDEF0054C183 /* BaseViewController.m */; };
+		388F6D491C19CDFA0054C183 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 388F6D481C19CDFA0054C183 /* LoginViewController.m */; };
+		388F6D4D1C19D14E0054C183 /* ClinicsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 388F6D4C1C19D14E0054C183 /* ClinicsListViewController.m */; };
+		388F6D501C19E58D0054C183 /* ServerRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 388F6D4F1C19E58D0054C183 /* ServerRequestManager.m */; };
+		388F6D561C19E6570054C183 /* UVJSONToModelMarshal.m in Sources */ = {isa = PBXBuildFile; fileRef = 388F6D551C19E6570054C183 /* UVJSONToModelMarshal.m */; };
+		388F6D591C19E6CE0054C183 /* ServerRequestManager+Login.m in Sources */ = {isa = PBXBuildFile; fileRef = 388F6D581C19E6CE0054C183 /* ServerRequestManager+Login.m */; };
+		388F6D5C1C19E7C60054C183 /* Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 388F6D5B1C19E7C60054C183 /* Utility.m */; };
+		388F6D611C19EE6A0054C183 /* AutolayoutLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 388F6D601C19EE6A0054C183 /* AutolayoutLabel.m */; };
+		388F6D641C19EE990054C183 /* UIColor+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 388F6D631C19EE990054C183 /* UIColor+Additions.m */; };
+		389316D91C21D9CD00397A5D /* LeftPatientListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 389316D81C21D9CD00397A5D /* LeftPatientListTableViewCell.m */; };
+		389316DF1C21F34900397A5D /* PatientHeaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 389316DE1C21F34900397A5D /* PatientHeaderViewController.m */; };
+		389316E21C21F38500397A5D /* PatientDetailViewController+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 389316E11C21F38500397A5D /* PatientDetailViewController+Additions.m */; };
+		389316E51C21F43400397A5D /* PatientInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 389316E41C21F43400397A5D /* PatientInfoViewController.m */; };
+		38D8F6FD1C1B26BB003B97B8 /* TPKeyboardAvoidingCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 38D8F6F61C1B26BB003B97B8 /* TPKeyboardAvoidingCollectionView.m */; };
+		38D8F6FE1C1B26BB003B97B8 /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 38D8F6F81C1B26BB003B97B8 /* TPKeyboardAvoidingScrollView.m */; };
+		38D8F6FF1C1B26BB003B97B8 /* TPKeyboardAvoidingTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 38D8F6FA1C1B26BB003B97B8 /* TPKeyboardAvoidingTableView.m */; };
+		38D8F7001C1B26BB003B97B8 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 38D8F6FC1C1B26BB003B97B8 /* UIScrollView+TPKeyboardAvoidingAdditions.m */; };
+		38FD45E91C2092EF00DA16A7 /* AutolayoutUIButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 38FD45E81C2092EF00DA16A7 /* AutolayoutUIButton.m */; };
+		4BB723ED6D87DD1250864839 /* libPods-BioStation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D4FC4D32AAE0A4723F6CC81D /* libPods-BioStation.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		388F6D351C19C8F40054C183 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 388F6D131C19C8F40054C183 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 388F6D1A1C19C8F40054C183;
+			remoteInfo = BioStation;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1295AE0A0AE11B435472B83E /* Pods-BioStation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BioStation.release.xcconfig"; path = "Pods/Target Support Files/Pods-BioStation/Pods-BioStation.release.xcconfig"; sourceTree = "<group>"; };
+		380985691C1C886400EDC74D /* PatientListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PatientListViewController.h; sourceTree = "<group>"; };
+		3809856A1C1C886400EDC74D /* PatientListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PatientListViewController.m; sourceTree = "<group>"; };
+		3809856C1C1C899E00EDC74D /* PatientListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PatientListTableViewCell.h; sourceTree = "<group>"; };
+		3809856D1C1C899E00EDC74D /* PatientListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PatientListTableViewCell.m; sourceTree = "<group>"; };
+		380985751C1C8FD100EDC74D /* ServerRequestManager+Patient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ServerRequestManager+Patient.h"; sourceTree = "<group>"; };
+		380985761C1C8FD100EDC74D /* ServerRequestManager+Patient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ServerRequestManager+Patient.m"; sourceTree = "<group>"; };
+		380985781C1C901100EDC74D /* Patient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Patient.h; sourceTree = "<group>"; };
+		380985791C1C901100EDC74D /* Patient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Patient.m; sourceTree = "<group>"; };
+		3809857E1C1CAB0D00EDC74D /* BSDateFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSDateFormatter.h; sourceTree = "<group>"; };
+		3809857F1C1CAB0D00EDC74D /* BSDateFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSDateFormatter.m; sourceTree = "<group>"; };
+		380985811C1CB35000EDC74D /* AutolayoutView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutolayoutView.h; sourceTree = "<group>"; };
+		380985821C1CB35000EDC74D /* AutolayoutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutolayoutView.m; sourceTree = "<group>"; };
+		384C69B91C1F1E930076566D /* PatientDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PatientDetailViewController.h; sourceTree = "<group>"; };
+		384C69BA1C1F1E930076566D /* PatientDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PatientDetailViewController.m; sourceTree = "<group>"; };
+		38533ED01C2309D200892BAD /* PatientInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PatientInfo.h; sourceTree = "<group>"; };
+		38533ED11C2309D200892BAD /* PatientInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PatientInfo.m; sourceTree = "<group>"; };
+		385BE6DA1C19F6CB00CBC102 /* AvenirLTStd-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AvenirLTStd-Black.otf"; sourceTree = "<group>"; };
+		385BE6DB1C19F6CB00CBC102 /* AvenirLTStd-BlackOblique.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AvenirLTStd-BlackOblique.otf"; sourceTree = "<group>"; };
+		385BE6DC1C19F6CB00CBC102 /* AvenirLTStd-Book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AvenirLTStd-Book.otf"; sourceTree = "<group>"; };
+		385BE6DD1C19F6CB00CBC102 /* AvenirLTStd-BookOblique.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AvenirLTStd-BookOblique.otf"; sourceTree = "<group>"; };
+		385BE6DE1C19F6CB00CBC102 /* AvenirLTStd-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AvenirLTStd-Heavy.otf"; sourceTree = "<group>"; };
+		385BE6DF1C19F6CB00CBC102 /* AvenirLTStd-HeavyOblique.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AvenirLTStd-HeavyOblique.otf"; sourceTree = "<group>"; };
+		385BE6E01C19F6CB00CBC102 /* AvenirLTStd-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AvenirLTStd-Light.otf"; sourceTree = "<group>"; };
+		385BE6E11C19F6CB00CBC102 /* AvenirLTStd-LightOblique.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AvenirLTStd-LightOblique.otf"; sourceTree = "<group>"; };
+		385BE6E21C19F6CB00CBC102 /* AvenirNextLTPro-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AvenirNextLTPro-Bold.otf"; sourceTree = "<group>"; };
+		385BE6E31C19F6CB00CBC102 /* AvenirNextLTPro-BoldCn.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AvenirNextLTPro-BoldCn.otf"; sourceTree = "<group>"; };
+		385BE6E41C19F6CB00CBC102 /* AvenirNextLTPro-BoldCnIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AvenirNextLTPro-BoldCnIt.otf"; sourceTree = "<group>"; };
+		385BE6E51C19F6CB00CBC102 /* AvenirNextLTPro-Cn.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AvenirNextLTPro-Cn.otf"; sourceTree = "<group>"; };
+		385BE6E61C19F6CB00CBC102 /* AvenirNextLTPro-CnIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AvenirNextLTPro-CnIt.otf"; sourceTree = "<group>"; };
+		385BE6E71C19F6CB00CBC102 /* AvenirNextLTPro-Demi.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AvenirNextLTPro-Demi.otf"; sourceTree = "<group>"; };
+		385BE6E81C19F6CB00CBC102 /* AvenirNextLTPro-DemiCn.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AvenirNextLTPro-DemiCn.otf"; sourceTree = "<group>"; };
+		385BE6E91C19F6CB00CBC102 /* AvenirNextLTPro-DemiCnIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AvenirNextLTPro-DemiCnIt.otf"; sourceTree = "<group>"; };
+		385BE6EA1C19F6CB00CBC102 /* AvenirNextLTPro-DemiIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AvenirNextLTPro-DemiIt.otf"; sourceTree = "<group>"; };
+		385BE6EB1C19F6CB00CBC102 /* AvenirNextLTPro-HeavyCn.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AvenirNextLTPro-HeavyCn.otf"; sourceTree = "<group>"; };
+		385BE6EC1C19F6CB00CBC102 /* AvenirNextLTPro-HeavyCnIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AvenirNextLTPro-HeavyCnIt.otf"; sourceTree = "<group>"; };
+		385BE6ED1C19F6CB00CBC102 /* AvenirNextLTPro-It.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AvenirNextLTPro-It.otf"; sourceTree = "<group>"; };
+		385BE6EE1C19F6CB00CBC102 /* AvenirNextLTPro-MediumCn.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AvenirNextLTPro-MediumCn.otf"; sourceTree = "<group>"; };
+		385BE6EF1C19F6CB00CBC102 /* AvenirNextLTPro-MediumCnIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AvenirNextLTPro-MediumCnIt.otf"; sourceTree = "<group>"; };
+		385BE6F01C19F6CB00CBC102 /* AvenirNextLTPro-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AvenirNextLTPro-Regular.otf"; sourceTree = "<group>"; };
+		385BE6F11C19F6CB00CBC102 /* AvenirNextLTPro-UltLtCn.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AvenirNextLTPro-UltLtCn.otf"; sourceTree = "<group>"; };
+		385BE6F21C19F6CB00CBC102 /* AvenirNextLTPro-UltLtCnIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AvenirNextLTPro-UltLtCnIt.otf"; sourceTree = "<group>"; };
+		385BE70C1C19F84E00CBC102 /* FontFile.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = FontFile.strings; sourceTree = "<group>"; };
+		385BE70F1C19FB9F00CBC102 /* BaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
+		385BE7101C19FB9F00CBC102 /* BaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
+		385BE7121C19FBAA00CBC102 /* LoggedUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoggedUser.h; sourceTree = "<group>"; };
+		385BE7131C19FBAA00CBC102 /* LoggedUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoggedUser.m; sourceTree = "<group>"; };
+		385BE7151C19FCAE00CBC102 /* Clinic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Clinic.h; sourceTree = "<group>"; };
+		385BE7161C19FCAE00CBC102 /* Clinic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Clinic.m; sourceTree = "<group>"; };
+		385BE7181C19FD5100CBC102 /* Macros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Macros.h; sourceTree = "<group>"; };
+		385BE7191C19FD7900CBC102 /* UserDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserDefaults.h; sourceTree = "<group>"; };
+		385BE71A1C19FD7900CBC102 /* UserDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserDefaults.m; sourceTree = "<group>"; };
+		385BE71F1C19FFC600CBC102 /* UIViewController+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Additions.h"; sourceTree = "<group>"; };
+		385BE7201C19FFC600CBC102 /* UIViewController+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Additions.m"; sourceTree = "<group>"; };
+		385BE7231C1A039500CBC102 /* ClinicsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClinicsTableViewCell.h; sourceTree = "<group>"; };
+		385BE7241C1A039500CBC102 /* ClinicsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClinicsTableViewCell.m; sourceTree = "<group>"; };
+		385BE7261C1A076200CBC102 /* AutolayoutTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutolayoutTextField.h; sourceTree = "<group>"; };
+		385BE7271C1A076200CBC102 /* AutolayoutTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutolayoutTextField.m; sourceTree = "<group>"; };
+		388F6D1B1C19C8F40054C183 /* BioStation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BioStation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		388F6D1F1C19C8F40054C183 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		388F6D201C19C8F40054C183 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		388F6D221C19C8F40054C183 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		388F6D231C19C8F40054C183 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		388F6D251C19C8F40054C183 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		388F6D261C19C8F40054C183 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		388F6D291C19C8F40054C183 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		388F6D2B1C19C8F40054C183 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		388F6D2E1C19C8F40054C183 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		388F6D341C19C8F40054C183 /* BioStationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BioStationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		388F6D391C19C8F40054C183 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		388F6D3A1C19C8F40054C183 /* BioStationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BioStationTests.m; sourceTree = "<group>"; };
+		388F6D441C19CDEF0054C183 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		388F6D451C19CDEF0054C183 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		388F6D471C19CDFA0054C183 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		388F6D481C19CDFA0054C183 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		388F6D4B1C19D14E0054C183 /* ClinicsListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClinicsListViewController.h; sourceTree = "<group>"; };
+		388F6D4C1C19D14E0054C183 /* ClinicsListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClinicsListViewController.m; sourceTree = "<group>"; };
+		388F6D4E1C19E58D0054C183 /* ServerRequestManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServerRequestManager.h; sourceTree = "<group>"; };
+		388F6D4F1C19E58D0054C183 /* ServerRequestManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServerRequestManager.m; sourceTree = "<group>"; };
+		388F6D521C19E5D70054C183 /* CompletionBlocks.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CompletionBlocks.h; sourceTree = "<group>"; };
+		388F6D531C19E6180054C183 /* URLs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = URLs.h; sourceTree = "<group>"; };
+		388F6D541C19E6570054C183 /* UVJSONToModelMarshal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UVJSONToModelMarshal.h; sourceTree = "<group>"; };
+		388F6D551C19E6570054C183 /* UVJSONToModelMarshal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UVJSONToModelMarshal.m; sourceTree = "<group>"; };
+		388F6D571C19E6CE0054C183 /* ServerRequestManager+Login.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ServerRequestManager+Login.h"; sourceTree = "<group>"; };
+		388F6D581C19E6CE0054C183 /* ServerRequestManager+Login.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ServerRequestManager+Login.m"; sourceTree = "<group>"; };
+		388F6D5A1C19E7C60054C183 /* Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utility.h; sourceTree = "<group>"; };
+		388F6D5B1C19E7C60054C183 /* Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utility.m; sourceTree = "<group>"; };
+		388F6D5F1C19EE6A0054C183 /* AutolayoutLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutolayoutLabel.h; sourceTree = "<group>"; };
+		388F6D601C19EE6A0054C183 /* AutolayoutLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutolayoutLabel.m; sourceTree = "<group>"; };
+		388F6D621C19EE990054C183 /* UIColor+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Additions.h"; sourceTree = "<group>"; };
+		388F6D631C19EE990054C183 /* UIColor+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Additions.m"; sourceTree = "<group>"; };
+		388F6D651C19EEA70054C183 /* ColorFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorFile.h; sourceTree = "<group>"; };
+		389316D71C21D9CD00397A5D /* LeftPatientListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftPatientListTableViewCell.h; sourceTree = "<group>"; };
+		389316D81C21D9CD00397A5D /* LeftPatientListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftPatientListTableViewCell.m; sourceTree = "<group>"; };
+		389316DD1C21F34900397A5D /* PatientHeaderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PatientHeaderViewController.h; sourceTree = "<group>"; };
+		389316DE1C21F34900397A5D /* PatientHeaderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PatientHeaderViewController.m; sourceTree = "<group>"; };
+		389316E01C21F38500397A5D /* PatientDetailViewController+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PatientDetailViewController+Additions.h"; sourceTree = "<group>"; };
+		389316E11C21F38500397A5D /* PatientDetailViewController+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PatientDetailViewController+Additions.m"; sourceTree = "<group>"; };
+		389316E31C21F43400397A5D /* PatientInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PatientInfoViewController.h; sourceTree = "<group>"; };
+		389316E41C21F43400397A5D /* PatientInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PatientInfoViewController.m; sourceTree = "<group>"; };
+		38D8F6F51C1B26BB003B97B8 /* TPKeyboardAvoidingCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingCollectionView.h; sourceTree = "<group>"; };
+		38D8F6F61C1B26BB003B97B8 /* TPKeyboardAvoidingCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingCollectionView.m; sourceTree = "<group>"; };
+		38D8F6F71C1B26BB003B97B8 /* TPKeyboardAvoidingScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingScrollView.h; sourceTree = "<group>"; };
+		38D8F6F81C1B26BB003B97B8 /* TPKeyboardAvoidingScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingScrollView.m; sourceTree = "<group>"; };
+		38D8F6F91C1B26BB003B97B8 /* TPKeyboardAvoidingTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingTableView.h; sourceTree = "<group>"; };
+		38D8F6FA1C1B26BB003B97B8 /* TPKeyboardAvoidingTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingTableView.m; sourceTree = "<group>"; };
+		38D8F6FB1C1B26BB003B97B8 /* UIScrollView+TPKeyboardAvoidingAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+TPKeyboardAvoidingAdditions.h"; sourceTree = "<group>"; };
+		38D8F6FC1C1B26BB003B97B8 /* UIScrollView+TPKeyboardAvoidingAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+TPKeyboardAvoidingAdditions.m"; sourceTree = "<group>"; };
+		38FD45E71C2092EF00DA16A7 /* AutolayoutUIButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutolayoutUIButton.h; sourceTree = "<group>"; };
+		38FD45E81C2092EF00DA16A7 /* AutolayoutUIButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutolayoutUIButton.m; sourceTree = "<group>"; };
+		B2FDEE83018D2E4D9D4D193C /* Pods-BioStation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BioStation.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BioStation/Pods-BioStation.debug.xcconfig"; sourceTree = "<group>"; };
+		D4FC4D32AAE0A4723F6CC81D /* libPods-BioStation.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BioStation.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		388F6D181C19C8F40054C183 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BB723ED6D87DD1250864839 /* libPods-BioStation.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		388F6D311C19C8F40054C183 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		385BE6D91C19F68400CBC102 /* Application_Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				385BE70C1C19F84E00CBC102 /* FontFile.strings */,
+				385BE6DA1C19F6CB00CBC102 /* AvenirLTStd-Black.otf */,
+				385BE6DB1C19F6CB00CBC102 /* AvenirLTStd-BlackOblique.otf */,
+				385BE6DC1C19F6CB00CBC102 /* AvenirLTStd-Book.otf */,
+				385BE6DD1C19F6CB00CBC102 /* AvenirLTStd-BookOblique.otf */,
+				385BE6DE1C19F6CB00CBC102 /* AvenirLTStd-Heavy.otf */,
+				385BE6DF1C19F6CB00CBC102 /* AvenirLTStd-HeavyOblique.otf */,
+				385BE6E01C19F6CB00CBC102 /* AvenirLTStd-Light.otf */,
+				385BE6E11C19F6CB00CBC102 /* AvenirLTStd-LightOblique.otf */,
+				385BE6E21C19F6CB00CBC102 /* AvenirNextLTPro-Bold.otf */,
+				385BE6E31C19F6CB00CBC102 /* AvenirNextLTPro-BoldCn.otf */,
+				385BE6E41C19F6CB00CBC102 /* AvenirNextLTPro-BoldCnIt.otf */,
+				385BE6E51C19F6CB00CBC102 /* AvenirNextLTPro-Cn.otf */,
+				385BE6E61C19F6CB00CBC102 /* AvenirNextLTPro-CnIt.otf */,
+				385BE6E71C19F6CB00CBC102 /* AvenirNextLTPro-Demi.otf */,
+				385BE6E81C19F6CB00CBC102 /* AvenirNextLTPro-DemiCn.otf */,
+				385BE6E91C19F6CB00CBC102 /* AvenirNextLTPro-DemiCnIt.otf */,
+				385BE6EA1C19F6CB00CBC102 /* AvenirNextLTPro-DemiIt.otf */,
+				385BE6EB1C19F6CB00CBC102 /* AvenirNextLTPro-HeavyCn.otf */,
+				385BE6EC1C19F6CB00CBC102 /* AvenirNextLTPro-HeavyCnIt.otf */,
+				385BE6ED1C19F6CB00CBC102 /* AvenirNextLTPro-It.otf */,
+				385BE6EE1C19F6CB00CBC102 /* AvenirNextLTPro-MediumCn.otf */,
+				385BE6EF1C19F6CB00CBC102 /* AvenirNextLTPro-MediumCnIt.otf */,
+				385BE6F01C19F6CB00CBC102 /* AvenirNextLTPro-Regular.otf */,
+				385BE6F11C19F6CB00CBC102 /* AvenirNextLTPro-UltLtCn.otf */,
+				385BE6F21C19F6CB00CBC102 /* AvenirNextLTPro-UltLtCnIt.otf */,
+			);
+			name = Application_Fonts;
+			sourceTree = "<group>";
+		};
+		385BE70E1C19FB4D00CBC102 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				385BE70F1C19FB9F00CBC102 /* BaseModel.h */,
+				385BE7101C19FB9F00CBC102 /* BaseModel.m */,
+				385BE7121C19FBAA00CBC102 /* LoggedUser.h */,
+				385BE7131C19FBAA00CBC102 /* LoggedUser.m */,
+				385BE7151C19FCAE00CBC102 /* Clinic.h */,
+				385BE7161C19FCAE00CBC102 /* Clinic.m */,
+				380985781C1C901100EDC74D /* Patient.h */,
+				380985791C1C901100EDC74D /* Patient.m */,
+				38533ED01C2309D200892BAD /* PatientInfo.h */,
+				38533ED11C2309D200892BAD /* PatientInfo.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		385BE7221C1A037800CBC102 /* Custom Cells */ = {
+			isa = PBXGroup;
+			children = (
+				385BE7231C1A039500CBC102 /* ClinicsTableViewCell.h */,
+				385BE7241C1A039500CBC102 /* ClinicsTableViewCell.m */,
+				3809856C1C1C899E00EDC74D /* PatientListTableViewCell.h */,
+				3809856D1C1C899E00EDC74D /* PatientListTableViewCell.m */,
+				389316D71C21D9CD00397A5D /* LeftPatientListTableViewCell.h */,
+				389316D81C21D9CD00397A5D /* LeftPatientListTableViewCell.m */,
+			);
+			name = "Custom Cells";
+			sourceTree = "<group>";
+		};
+		385BE7291C1A076A00CBC102 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				388F6D621C19EE990054C183 /* UIColor+Additions.h */,
+				388F6D631C19EE990054C183 /* UIColor+Additions.m */,
+				385BE71F1C19FFC600CBC102 /* UIViewController+Additions.h */,
+				385BE7201C19FFC600CBC102 /* UIViewController+Additions.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		388F6D121C19C8F40054C183 = {
+			isa = PBXGroup;
+			children = (
+				388F6D1D1C19C8F40054C183 /* BioStation */,
+				388F6D371C19C8F40054C183 /* BioStationTests */,
+				388F6D1C1C19C8F40054C183 /* Products */,
+				53C46A3B77723D0E8C0A3415 /* Pods */,
+				55ED6989E4126466E3994A63 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		388F6D1C1C19C8F40054C183 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				388F6D1B1C19C8F40054C183 /* BioStation.app */,
+				388F6D341C19C8F40054C183 /* BioStationTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		388F6D1D1C19C8F40054C183 /* BioStation */ = {
+			isa = PBXGroup;
+			children = (
+				38D8F6F41C1B26AA003B97B8 /* TPKSCROLLER */,
+				385BE70E1C19FB4D00CBC102 /* Models */,
+				385BE6D91C19F68400CBC102 /* Application_Fonts */,
+				388F6D5E1C19EE2E0054C183 /* AutolayoutObjects */,
+				388F6D511C19E59D0054C183 /* Utilities */,
+				388F6D4A1C19CF320054C183 /* Request Managers */,
+				388F6D221C19C8F40054C183 /* AppDelegate.h */,
+				385BE7291C1A076A00CBC102 /* Categories */,
+				385BE7221C1A037800CBC102 /* Custom Cells */,
+				388F6D231C19C8F40054C183 /* AppDelegate.m */,
+				388F6D251C19C8F40054C183 /* ViewController.h */,
+				388F6D261C19C8F40054C183 /* ViewController.m */,
+				388F6D441C19CDEF0054C183 /* BaseViewController.h */,
+				388F6D451C19CDEF0054C183 /* BaseViewController.m */,
+				388F6D471C19CDFA0054C183 /* LoginViewController.h */,
+				388F6D481C19CDFA0054C183 /* LoginViewController.m */,
+				388F6D4B1C19D14E0054C183 /* ClinicsListViewController.h */,
+				388F6D4C1C19D14E0054C183 /* ClinicsListViewController.m */,
+				380985691C1C886400EDC74D /* PatientListViewController.h */,
+				3809856A1C1C886400EDC74D /* PatientListViewController.m */,
+				384C69B91C1F1E930076566D /* PatientDetailViewController.h */,
+				384C69BA1C1F1E930076566D /* PatientDetailViewController.m */,
+				389316DD1C21F34900397A5D /* PatientHeaderViewController.h */,
+				389316DE1C21F34900397A5D /* PatientHeaderViewController.m */,
+				389316E31C21F43400397A5D /* PatientInfoViewController.h */,
+				389316E41C21F43400397A5D /* PatientInfoViewController.m */,
+				389316E61C21F46F00397A5D /* ViewController Category */,
+				388F6D281C19C8F40054C183 /* Main.storyboard */,
+				388F6D2B1C19C8F40054C183 /* Images.xcassets */,
+				388F6D2D1C19C8F40054C183 /* LaunchScreen.xib */,
+				388F6D1E1C19C8F40054C183 /* Supporting Files */,
+			);
+			path = BioStation;
+			sourceTree = "<group>";
+		};
+		388F6D1E1C19C8F40054C183 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				388F6D1F1C19C8F40054C183 /* Info.plist */,
+				388F6D201C19C8F40054C183 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		388F6D371C19C8F40054C183 /* BioStationTests */ = {
+			isa = PBXGroup;
+			children = (
+				388F6D3A1C19C8F40054C183 /* BioStationTests.m */,
+				388F6D381C19C8F40054C183 /* Supporting Files */,
+			);
+			path = BioStationTests;
+			sourceTree = "<group>";
+		};
+		388F6D381C19C8F40054C183 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				388F6D391C19C8F40054C183 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		388F6D4A1C19CF320054C183 /* Request Managers */ = {
+			isa = PBXGroup;
+			children = (
+				388F6D4E1C19E58D0054C183 /* ServerRequestManager.h */,
+				388F6D4F1C19E58D0054C183 /* ServerRequestManager.m */,
+				388F6D571C19E6CE0054C183 /* ServerRequestManager+Login.h */,
+				388F6D581C19E6CE0054C183 /* ServerRequestManager+Login.m */,
+				380985751C1C8FD100EDC74D /* ServerRequestManager+Patient.h */,
+				380985761C1C8FD100EDC74D /* ServerRequestManager+Patient.m */,
+			);
+			name = "Request Managers";
+			sourceTree = "<group>";
+		};
+		388F6D511C19E59D0054C183 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				388F6D651C19EEA70054C183 /* ColorFile.h */,
+				388F6D541C19E6570054C183 /* UVJSONToModelMarshal.h */,
+				388F6D551C19E6570054C183 /* UVJSONToModelMarshal.m */,
+				388F6D521C19E5D70054C183 /* CompletionBlocks.h */,
+				388F6D531C19E6180054C183 /* URLs.h */,
+				388F6D5A1C19E7C60054C183 /* Utility.h */,
+				388F6D5B1C19E7C60054C183 /* Utility.m */,
+				385BE7181C19FD5100CBC102 /* Macros.h */,
+				385BE7191C19FD7900CBC102 /* UserDefaults.h */,
+				385BE71A1C19FD7900CBC102 /* UserDefaults.m */,
+				3809857E1C1CAB0D00EDC74D /* BSDateFormatter.h */,
+				3809857F1C1CAB0D00EDC74D /* BSDateFormatter.m */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		388F6D5E1C19EE2E0054C183 /* AutolayoutObjects */ = {
+			isa = PBXGroup;
+			children = (
+				388F6D5F1C19EE6A0054C183 /* AutolayoutLabel.h */,
+				388F6D601C19EE6A0054C183 /* AutolayoutLabel.m */,
+				385BE7261C1A076200CBC102 /* AutolayoutTextField.h */,
+				385BE7271C1A076200CBC102 /* AutolayoutTextField.m */,
+				380985811C1CB35000EDC74D /* AutolayoutView.h */,
+				380985821C1CB35000EDC74D /* AutolayoutView.m */,
+				38FD45E71C2092EF00DA16A7 /* AutolayoutUIButton.h */,
+				38FD45E81C2092EF00DA16A7 /* AutolayoutUIButton.m */,
+			);
+			name = AutolayoutObjects;
+			sourceTree = "<group>";
+		};
+		389316E61C21F46F00397A5D /* ViewController Category */ = {
+			isa = PBXGroup;
+			children = (
+				389316E01C21F38500397A5D /* PatientDetailViewController+Additions.h */,
+				389316E11C21F38500397A5D /* PatientDetailViewController+Additions.m */,
+			);
+			name = "ViewController Category";
+			sourceTree = "<group>";
+		};
+		38D8F6F41C1B26AA003B97B8 /* TPKSCROLLER */ = {
+			isa = PBXGroup;
+			children = (
+				38D8F6F51C1B26BB003B97B8 /* TPKeyboardAvoidingCollectionView.h */,
+				38D8F6F61C1B26BB003B97B8 /* TPKeyboardAvoidingCollectionView.m */,
+				38D8F6F71C1B26BB003B97B8 /* TPKeyboardAvoidingScrollView.h */,
+				38D8F6F81C1B26BB003B97B8 /* TPKeyboardAvoidingScrollView.m */,
+				38D8F6F91C1B26BB003B97B8 /* TPKeyboardAvoidingTableView.h */,
+				38D8F6FA1C1B26BB003B97B8 /* TPKeyboardAvoidingTableView.m */,
+				38D8F6FB1C1B26BB003B97B8 /* UIScrollView+TPKeyboardAvoidingAdditions.h */,
+				38D8F6FC1C1B26BB003B97B8 /* UIScrollView+TPKeyboardAvoidingAdditions.m */,
+			);
+			name = TPKSCROLLER;
+			sourceTree = "<group>";
+		};
+		53C46A3B77723D0E8C0A3415 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B2FDEE83018D2E4D9D4D193C /* Pods-BioStation.debug.xcconfig */,
+				1295AE0A0AE11B435472B83E /* Pods-BioStation.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		55ED6989E4126466E3994A63 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D4FC4D32AAE0A4723F6CC81D /* libPods-BioStation.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		388F6D1A1C19C8F40054C183 /* BioStation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 388F6D3E1C19C8F40054C183 /* Build configuration list for PBXNativeTarget "BioStation" */;
+			buildPhases = (
+				0DCE69B94B9DF7B2A526CDF0 /* Check Pods Manifest.lock */,
+				388F6D171C19C8F40054C183 /* Sources */,
+				388F6D181C19C8F40054C183 /* Frameworks */,
+				388F6D191C19C8F40054C183 /* Resources */,
+				13F770F49B9006B72FC25718 /* Embed Pods Frameworks */,
+				DA9802A30D18BA1337DD7C6E /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BioStation;
+			productName = BioStation;
+			productReference = 388F6D1B1C19C8F40054C183 /* BioStation.app */;
+			productType = "com.apple.product-type.application";
+		};
+		388F6D331C19C8F40054C183 /* BioStationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 388F6D411C19C8F40054C183 /* Build configuration list for PBXNativeTarget "BioStationTests" */;
+			buildPhases = (
+				388F6D301C19C8F40054C183 /* Sources */,
+				388F6D311C19C8F40054C183 /* Frameworks */,
+				388F6D321C19C8F40054C183 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				388F6D361C19C8F40054C183 /* PBXTargetDependency */,
+			);
+			name = BioStationTests;
+			productName = BioStationTests;
+			productReference = 388F6D341C19C8F40054C183 /* BioStationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		388F6D131C19C8F40054C183 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = Sandeep;
+				TargetAttributes = {
+					388F6D1A1C19C8F40054C183 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					388F6D331C19C8F40054C183 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 388F6D1A1C19C8F40054C183;
+					};
+				};
+			};
+			buildConfigurationList = 388F6D161C19C8F40054C183 /* Build configuration list for PBXProject "BioStation" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 388F6D121C19C8F40054C183;
+			productRefGroup = 388F6D1C1C19C8F40054C183 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				388F6D1A1C19C8F40054C183 /* BioStation */,
+				388F6D331C19C8F40054C183 /* BioStationTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		388F6D191C19C8F40054C183 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				385BE6FE1C19F6CB00CBC102 /* AvenirNextLTPro-Cn.otf in Resources */,
+				385BE70A1C19F6CB00CBC102 /* AvenirNextLTPro-UltLtCn.otf in Resources */,
+				385BE6FC1C19F6CB00CBC102 /* AvenirNextLTPro-BoldCn.otf in Resources */,
+				385BE6F81C19F6CB00CBC102 /* AvenirLTStd-HeavyOblique.otf in Resources */,
+				388F6D2A1C19C8F40054C183 /* Main.storyboard in Resources */,
+				385BE6FB1C19F6CB00CBC102 /* AvenirNextLTPro-Bold.otf in Resources */,
+				385BE7011C19F6CB00CBC102 /* AvenirNextLTPro-DemiCn.otf in Resources */,
+				388F6D2F1C19C8F40054C183 /* LaunchScreen.xib in Resources */,
+				385BE7071C19F6CB00CBC102 /* AvenirNextLTPro-MediumCn.otf in Resources */,
+				385BE7091C19F6CB00CBC102 /* AvenirNextLTPro-Regular.otf in Resources */,
+				385BE7051C19F6CB00CBC102 /* AvenirNextLTPro-HeavyCnIt.otf in Resources */,
+				385BE70D1C19F84E00CBC102 /* FontFile.strings in Resources */,
+				385BE7031C19F6CB00CBC102 /* AvenirNextLTPro-DemiIt.otf in Resources */,
+				385BE6F31C19F6CB00CBC102 /* AvenirLTStd-Black.otf in Resources */,
+				385BE6FD1C19F6CB00CBC102 /* AvenirNextLTPro-BoldCnIt.otf in Resources */,
+				385BE7061C19F6CB00CBC102 /* AvenirNextLTPro-It.otf in Resources */,
+				385BE7081C19F6CB00CBC102 /* AvenirNextLTPro-MediumCnIt.otf in Resources */,
+				385BE6F51C19F6CB00CBC102 /* AvenirLTStd-Book.otf in Resources */,
+				385BE6FA1C19F6CB00CBC102 /* AvenirLTStd-LightOblique.otf in Resources */,
+				385BE7001C19F6CB00CBC102 /* AvenirNextLTPro-Demi.otf in Resources */,
+				385BE7021C19F6CB00CBC102 /* AvenirNextLTPro-DemiCnIt.otf in Resources */,
+				385BE6F61C19F6CB00CBC102 /* AvenirLTStd-BookOblique.otf in Resources */,
+				385BE70B1C19F6CB00CBC102 /* AvenirNextLTPro-UltLtCnIt.otf in Resources */,
+				385BE6F41C19F6CB00CBC102 /* AvenirLTStd-BlackOblique.otf in Resources */,
+				385BE7041C19F6CB00CBC102 /* AvenirNextLTPro-HeavyCn.otf in Resources */,
+				385BE6F91C19F6CB00CBC102 /* AvenirLTStd-Light.otf in Resources */,
+				385BE6F71C19F6CB00CBC102 /* AvenirLTStd-Heavy.otf in Resources */,
+				388F6D2C1C19C8F40054C183 /* Images.xcassets in Resources */,
+				385BE6FF1C19F6CB00CBC102 /* AvenirNextLTPro-CnIt.otf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		388F6D321C19C8F40054C183 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0DCE69B94B9DF7B2A526CDF0 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		13F770F49B9006B72FC25718 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BioStation/Pods-BioStation-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DA9802A30D18BA1337DD7C6E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BioStation/Pods-BioStation-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		388F6D171C19C8F40054C183 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38D8F6FE1C1B26BB003B97B8 /* TPKeyboardAvoidingScrollView.m in Sources */,
+				389316DF1C21F34900397A5D /* PatientHeaderViewController.m in Sources */,
+				385BE7211C19FFC600CBC102 /* UIViewController+Additions.m in Sources */,
+				385BE71B1C19FD7900CBC102 /* UserDefaults.m in Sources */,
+				38FD45E91C2092EF00DA16A7 /* AutolayoutUIButton.m in Sources */,
+				38533ED21C2309D200892BAD /* PatientInfo.m in Sources */,
+				388F6D611C19EE6A0054C183 /* AutolayoutLabel.m in Sources */,
+				388F6D501C19E58D0054C183 /* ServerRequestManager.m in Sources */,
+				388F6D271C19C8F40054C183 /* ViewController.m in Sources */,
+				38D8F7001C1B26BB003B97B8 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
+				388F6D5C1C19E7C60054C183 /* Utility.m in Sources */,
+				385BE7141C19FBAA00CBC102 /* LoggedUser.m in Sources */,
+				388F6D591C19E6CE0054C183 /* ServerRequestManager+Login.m in Sources */,
+				385BE7281C1A076200CBC102 /* AutolayoutTextField.m in Sources */,
+				388F6D641C19EE990054C183 /* UIColor+Additions.m in Sources */,
+				3809857A1C1C901100EDC74D /* Patient.m in Sources */,
+				38D8F6FD1C1B26BB003B97B8 /* TPKeyboardAvoidingCollectionView.m in Sources */,
+				388F6D561C19E6570054C183 /* UVJSONToModelMarshal.m in Sources */,
+				3809856B1C1C886400EDC74D /* PatientListViewController.m in Sources */,
+				385BE7171C19FCAE00CBC102 /* Clinic.m in Sources */,
+				385BE7251C1A039500CBC102 /* ClinicsTableViewCell.m in Sources */,
+				385BE7111C19FB9F00CBC102 /* BaseModel.m in Sources */,
+				3809856E1C1C899E00EDC74D /* PatientListTableViewCell.m in Sources */,
+				388F6D461C19CDEF0054C183 /* BaseViewController.m in Sources */,
+				380985801C1CAB0D00EDC74D /* BSDateFormatter.m in Sources */,
+				380985771C1C8FD100EDC74D /* ServerRequestManager+Patient.m in Sources */,
+				389316D91C21D9CD00397A5D /* LeftPatientListTableViewCell.m in Sources */,
+				389316E51C21F43400397A5D /* PatientInfoViewController.m in Sources */,
+				384C69BB1C1F1E930076566D /* PatientDetailViewController.m in Sources */,
+				388F6D241C19C8F40054C183 /* AppDelegate.m in Sources */,
+				388F6D211C19C8F40054C183 /* main.m in Sources */,
+				38D8F6FF1C1B26BB003B97B8 /* TPKeyboardAvoidingTableView.m in Sources */,
+				388F6D4D1C19D14E0054C183 /* ClinicsListViewController.m in Sources */,
+				388F6D491C19CDFA0054C183 /* LoginViewController.m in Sources */,
+				380985831C1CB35000EDC74D /* AutolayoutView.m in Sources */,
+				389316E21C21F38500397A5D /* PatientDetailViewController+Additions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		388F6D301C19C8F40054C183 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				388F6D3B1C19C8F40054C183 /* BioStationTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		388F6D361C19C8F40054C183 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 388F6D1A1C19C8F40054C183 /* BioStation */;
+			targetProxy = 388F6D351C19C8F40054C183 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		388F6D281C19C8F40054C183 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				388F6D291C19C8F40054C183 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		388F6D2D1C19C8F40054C183 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				388F6D2E1C19C8F40054C183 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		388F6D3C1C19C8F40054C183 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		388F6D3D1C19C8F40054C183 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		388F6D3F1C19C8F40054C183 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B2FDEE83018D2E4D9D4D193C /* Pods-BioStation.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: SANDEEP RAWAT (C2Y9TEY3PL)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: SANDEEP RAWAT (C2Y9TEY3PL)";
+				INFOPLIST_FILE = BioStation/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "0fec4922-6817-4a47-99ee-8b2350ccad91";
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		388F6D401C19C8F40054C183 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1295AE0A0AE11B435472B83E /* Pods-BioStation.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: SANDEEP RAWAT (C2Y9TEY3PL)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: SANDEEP RAWAT (C2Y9TEY3PL)";
+				INFOPLIST_FILE = BioStation/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "0fec4922-6817-4a47-99ee-8b2350ccad91";
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+		388F6D421C19C8F40054C183 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BioStationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BioStation.app/BioStation";
+			};
+			name = Debug;
+		};
+		388F6D431C19C8F40054C183 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BioStationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BioStation.app/BioStation";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		388F6D161C19C8F40054C183 /* Build configuration list for PBXProject "BioStation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				388F6D3C1C19C8F40054C183 /* Debug */,
+				388F6D3D1C19C8F40054C183 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		388F6D3E1C19C8F40054C183 /* Build configuration list for PBXNativeTarget "BioStation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				388F6D3F1C19C8F40054C183 /* Debug */,
+				388F6D401C19C8F40054C183 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		388F6D411C19C8F40054C183 /* Build configuration list for PBXNativeTarget "BioStationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				388F6D421C19C8F40054C183 /* Debug */,
+				388F6D431C19C8F40054C183 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 388F6D131C19C8F40054C183 /* Project object */;
+}
